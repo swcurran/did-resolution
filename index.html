@@ -328,10 +328,10 @@ Further, the specification's <a href="#dereferencing-algorithm">DID URL derefere
 shows how a client can follow a fragment (e.g., `#key-1`) to extract a
 particular <a>verification method</a> from the <a>DID document</a>
 (see <a href="#example-dereferencing-to-verification-method">here for detailed example</a>).
-In practice, implementers validate their resolver against the
-<a href="https://github.com/w3c-ccg/did-resolution-mocha-test-suite">DID Resolution Test Suite</a>
+Implementers are encouraged to validate their resolver against the
+<a href="https://github.com/w3c/did-resolution-test-suite">DID Resolution Test Suite</a>
 which exercises normative MUSTs and error conditions (such as invalid DIDs,
-deactivated DIDs, unsupported methods, relative URL expansion, etc.) to ensure
+deactivated DIDs, unsupported methods, relative URL expansion, etc.) so
 that client applications can reliably depend on correct resolution behavior
 across different DID methods.
         </p>
