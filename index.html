@@ -2238,6 +2238,7 @@ Resolution</a>
             Result</a>
           </li>
         </ol>
+      </section>
         <section id="prepare-for-resolution-provisional">
           <h1>Prepare for Resolution</h1>
           <ol>
@@ -2339,7 +2340,7 @@ starting with the <a>Services Step</a> until a handling strategy is
 determined. End processing as soon as a strategy is set. Start with
 no error set.
           </p>
-          <ol>
+          <ol class="algorithm">
             <li>
               <dfn>Services Step</dfn>
               <aside class="note" title="Original text prior to conversion, to be removed after review">
@@ -2362,10 +2363,10 @@ Service Handler Strategy</a>. Otherwise, continue with the
                   </p>
                 </blockquote>
               </aside>
-              <ol>
+              <ol class="algorithm">
                 <li>
                   If one or more `service` DID query parameters are present:
-                  <ol>
+                  <ol class="algorithm">
                     <li>
                       If multiple `service` parameters are present in
                       the <a>DID URL</a>:
@@ -2383,7 +2384,7 @@ Service Handler Strategy</a>. Otherwise, continue with the
                     <li>
                       Otherwise (there is just one `service`
                       parameter):
-                      <ol>
+                      <ol class="algorithm">
                         <li>
                           Use the <a
                           href="#service-selection-algorithm-provisional">service
@@ -2443,11 +2444,11 @@ continue to the <a>Document Properties step</a>.
                   </p>
                 </blockquote>
               </aside>
-              <ol>
+              <ol class="algorithm">
                 <li>
                   If the <a>DID URL</a> contains a non-empty path
                   part:
-                  <ol>
+                  <ol class="algorithm">
                     <li>
                       Use the <a
                       href="#pathHandler-path-matching-algorithm-provisional">PathHandler
@@ -2524,11 +2525,11 @@ by that property. Otherwise, continue to the
                   </p>
                 </blockquote>
               </aside>
-              <ol>
+              <ol class="algorithm">
                 <li>
                   If the DID document contains any properties known to
                   define a handler strategy:
-                  <ol>
+                  <ol class="algorithm">
                     <li>
                       Check to see if any of those properties apply to
                       the <a>DID URL</a>.
@@ -2577,11 +2578,11 @@ strategy, continue with the <a>Query Parameters Step</a>.
                   </p>
                 </blockquote>
               </aside>
-              <ol>
+              <ol class="algorithm">
                 <li>
                   If the DID method defines a method-specific handler
                   strategy:
-                  <ol>
+                  <ol class="algorithm">
                     <li>
                       Check to see if that handler applies to the
                       <a>DID URL</a>.
@@ -2611,11 +2612,11 @@ specification. Otherwise, continue with the <a>Metadata Step</a>.
                   </p>
                 </blockquote>
               </aside>
-              <ol>
+              <ol class="algorithm">
                 <li>
                   If there are query parameters that require a
                   specific handling strategy:
-                  <ol>
+                  <ol class="algorithm">
                     <li>
                       If there are more than one:
                       <ul>
